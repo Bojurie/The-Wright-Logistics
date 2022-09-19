@@ -1,5 +1,5 @@
-import React from 'react'
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
+import {Link } from 'react-router-dom';
 import './Footer.css'
 import footerLogo from './Images/footerlogoimg.png'
 
@@ -17,10 +17,10 @@ const Footer = () => {
             <div className='middle-side'>
               <h4>Pages</h4>
                 <ul>
-                  <li>Home</li>
-                  <li>About Us</li>
-                  <li>Services</li>
-                  <li>Contact Us</li>
+                  <Link to='/home'></Link>
+                  <Link to='/about'></Link>
+                  <Link to='/services'></Link>
+                  <Link to='/contact'></Link>
                 </ul>
             </div>
 

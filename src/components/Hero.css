@@ -5,7 +5,7 @@
   z-index: 1;
   height: auto;
   margin: auto;
-  margin-bottom: 350px;
+  margin-bottom: 200px;
 
 }
 
@@ -27,7 +27,7 @@
 
 .carousel-caption h3 {
   width: 100%;
-  text-align: center;
+
   display: flex;
   padding: 10px 0;
 }
@@ -124,9 +124,9 @@
   }
 
   .truckAbs {
-
+    /* 
     width: 593px;
-    height: 339px;
+    height: 339px; */
     left: 155px;
     top: 530px;
   }

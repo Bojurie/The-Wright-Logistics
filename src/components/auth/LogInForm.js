@@ -9,37 +9,37 @@
 
 
 // const LoginForm = () => {
-//   const [values, setValues] = useState({
-//     email: "",
-//     password: "",
-//     handleSubmit: ""
+  // const [values, setValues] = useState({
+  //   email: "",
+  //   password: "",
+  //   handleSubmit: ""
 
-//   })
+  // })
 
-//    const handleEmail = (e)=> {
-//     setValues ({...values, email: e.target.values})
-//   }
+  //  const handleEmail = (e)=> {
+  //   setValues ({...values, email: e.target.values})
+  // }
 
-//   const handlePassword = (e)=> {
-//     setValues ({...values, password: e.target.values})
-//   }
+  // const handlePassword = (e)=> {
+  //   setValues ({...values, password: e.target.values})
+  // }
 
-//    const handleSubmit = async (e) =>{
-//      e.preventDefault();
-//      console.log(e);
+  //  const handleSubmit = async (e) =>{
+  //    e.preventDefault();
+  //    console.log(e);
     
-//   //   if(values.name && values.email && values.message){
-//   // setValid(true)
-//   // const response = await axios.post('./login',
-//   //     JSON.stringify({ user, pwd }),
-//   //     {
-//   //         headers: { 'Content-Type': 'application/json' },
-//   //         withCredentials: true
-//   //     }
-//   // );
+  // //   if(values.name && values.email && values.message){
+  // // setValid(true)
+  // // const response = await axios.post('./login',
+  // //     JSON.stringify({ user, pwd }),
+  // //     {
+  // //         headers: { 'Content-Type': 'application/json' },
+  // //         withCredentials: true
+  // //     }
+  // // );
 
-//     }
-//     // setSubmitted(true)
+  //   }
+  //   // setSubmitted(true)
 
 
 //     return (

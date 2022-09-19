@@ -10,7 +10,7 @@ class Services extends Component {
       <div className='services'>
         <Header title='Services'  />
         <div className='services-content'>
-          <div className='container service-content-wrapper '>
+          <div className='containers service-content-wrapper '>
               <div className='left-side img-wrapper'>
                 <img src={serviceimg} alt=''/>
               </div>

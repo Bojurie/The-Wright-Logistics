@@ -31,8 +31,8 @@ const Hero = () => {
               />
 
               <Carousel.Caption className='carousel-caption'>
-                <h3 className='Carousel-sub'>- Quick & Powerful Solution - </h3>
-                <p className='carousel-para'>UNBEATABLE TRUCKING AND TRANSPORT SERVICES</p>
+                <h3 className='Carousel-sub'> - Quick & Powerful Solution - </h3>
+                <p className='carousel-para'>UNBEATABLE TRUCKING AND TRANSPORTATION SERVICES</p>
               </Carousel.Caption>
             </Carousel.Item>
 
@@ -43,11 +43,6 @@ const Hero = () => {
                   alt="Third slide"
                 />
 
-                <Carousel.Caption className='carousel-caption'>
-                  {/* <h3 className='Carousel-sub'></h3>
-                  <p className='carousel-para'></p> */}
-
-              </Carousel.Caption>
             </Carousel.Item>
 
           </Carousel>

@@ -14,11 +14,14 @@ class Home extends Component {
     return (
       <div>
         <Hero />
+        <div className='home-content'>
+         
         <HomeAbout />
         <HomeServices />
        <Clients />
        <Review />
        <Contact />
+        </div>
     
    
       </div>

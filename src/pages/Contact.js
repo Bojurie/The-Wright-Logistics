@@ -40,14 +40,14 @@ const Contact = () => {
      setValues ({...values, message: e.target.values})
   }
 
-  const handleSubmit = (e) =>{
-     e.preventDefault();
+  // const handleSubmit = (e) =>{
+  //    e.preventDefault();
     
-    if(values.name && values.email && values.message){
-  setValid(true)
-    }
-    setSubmitted(true)
-  }
+  //   if(values.name && values.email && values.message){
+  // setValid(true)
+  //   }
+  //   setSubmitted(true)
+  // }
 
 
   return (
@@ -62,7 +62,7 @@ const Contact = () => {
                   </p>
                 </div>
                <div className='contact-wrapper'>
-                <form id="contact-form" onSubmit={handleSubmit} method="POST" action='/contact'>
+                <form id="contact-form"  method="POST" action='/contact'>
 
                 {submitted && valid ?  <div className='success-message'>Success! Thank you for contacting us.</div> : null}
                   <div className='contact-forms-container'>  
@@ -122,7 +122,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className='button-contact'>
-                    <button onSubmit={handleSubmit}
+                    <button 
                         type="submit" 
                         className="btn btn-primary contact-btn">
                           Submit
