@@ -40,14 +40,14 @@ const Contact = () => {
      setValues ({...values, message: e.target.values})
   }
 
-  // const handleSubmit = (e) =>{
-  //    e.preventDefault();
+  const handleSubmit = (e) =>{
+     e.preventDefault();
     
-  //   if(values.name && values.email && values.message){
-  // setValid(true)
-  //   }
-  //   setSubmitted(true)
-  // }
+    if(values.name && values.email && values.message){
+  setValid(true)
+    }
+    setSubmitted(true)
+  }
 
 
   return (
@@ -57,9 +57,7 @@ const Contact = () => {
           <FormTitle className="sign-in-form__title" text="GET IN TOUCH"/> 
                 <div className='form-header'>
                   
-                  <p>
-                    I am the best at this so contact now and i will build you the most amzing website you have ever had. No Cap
-                  </p>
+                  <p>I am the best at this so contact now and i will build you the most amzing website you have ever had. No Cap </p>
                 </div>
                <div className='contact-wrapper'>
                 <form id="contact-form"  method="POST" action='/contact'>
