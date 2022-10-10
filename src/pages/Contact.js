@@ -60,7 +60,7 @@ const Contact = () => {
                   <p>I am the best at this so contact now and i will build you the most amzing website you have ever had. No Cap </p>
                 </div>
                <div className='contact-wrapper'>
-                <form id="contact-form"  method="POST" action='/contact'>
+                <form id="contact-form"  method="post" action='/contact'>
 
                 {submitted && valid ?  <div className='success-message'>Success! Thank you for contacting us.</div> : null}
                   <div className='contact-forms-container'>  
