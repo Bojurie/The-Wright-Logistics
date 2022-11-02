@@ -11,16 +11,16 @@ const Footer = () => {
         <div className='container-wrapper'>
             <div className='left-side'>
               <img src={footerLogo} alt='' />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi facilisi lectus ut sem elementum, tincidunt. Faucibus velit tempor, posuere vitae quam proin mauris dolor sit..</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi facilisi lectus ut sem ele <li>Home</li></p>
             </div>
 
             <div className='middle-side'>
               <h4>Pages</h4>
                 <ul>
-                  <Link to='/home'></Link>
-                  <Link to='/about'></Link>
-                  <Link to='/services'></Link>
-                  <Link to='/contact'></Link>
+                  <li>Home</li>
+                  <li>Services</li>
+                  <li>Home</li>
+                  <li>Home</li> 
                 </ul>
             </div>
 

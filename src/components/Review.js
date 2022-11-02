@@ -20,9 +20,7 @@ const Review = () => {
                       src={image1}
                       alt=""
                     />
-                    <Carousel.Caption className='carousel-caption'>
-                        
-                    </Carousel.Caption>
+                   
                 </Carousel.Item>
 
                 <Carousel.Item>
@@ -32,10 +30,10 @@ const Review = () => {
                     alt="Second slide"
                   />
 
-                  <Carousel.Caption className='carousel-caption'>
+                  {/* <Carousel.Caption className='carousel-caption'>
                     <h3 className='Carousel-sub'> </h3>
                     <p className='carousel-para'></p>
-                  </Carousel.Caption>
+                  </Carousel.Caption> */}
                 </Carousel.Item>
 
                 

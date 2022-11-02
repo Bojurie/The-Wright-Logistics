@@ -165,16 +165,29 @@ hr {
   }
 }
 
-@media screen and (max-width: 820px) {
-  .service-truckImg {
-    left: 502.79px;
-    top: 1901.09px;
+@media screen and (max-width: 768px) {
+  /* .service-truckImg {
+    left: 462.79px !important;
+    top: 2154.09px;
   }
 
   .miniTruck {
 
-    left: 583.75px;
-    top: 2033.23px;
+    left: 532.75px !important;
+    top: 2284.23px;
+  } */
+}
+
+@media screen and (max-width: 820px) {
+  .service-truckImg {
+    left: 502.79px;
+    top: 2154.09px;
+  }
+
+  .miniTruck {
+
+    left: 581.75px;
+    top: 2284.23px;
   }
 
   .home-services {

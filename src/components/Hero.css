@@ -1,12 +1,10 @@
 .Hero {
-  /* height: 500px; */
   width: 100%;
   position: relative;
   z-index: 1;
   height: auto;
   margin: auto;
   margin-bottom: 200px;
-
 }
 
 .carousel {
@@ -16,67 +14,49 @@
 
 }
 
-.carousel-para {
-  font-size: 26px;
-}
-
 .carousel-caption {
-  top: 100px;
   text-align: center;
+  align-items: center;
+  height: 100%;
+
 }
 
 .carousel-caption h3 {
   width: 100%;
-
-  display: flex;
-  padding: 10px 0;
+  font-size: 2rem;
+  color: rgb(5, 6, 6);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-items: center;
 }
 
-.carousel-caption p {
-  text-transform: capitalize !important;
-  font-family: Mont;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
+.carousel-caption h3 span {
+  color: #EAAC0F;
+}
+
+.carousel-caption h1 {
+  font-weight: 900;
+  font-size: 3rem;
   line-height: 147.5%;
-  width: 100%;
-  opacity: .8;
+  color: white;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.1em;
-
-  color: white;
+  text-transform: uppercase;
 }
-
-
 
 .truckAbs {
   position: absolute;
   z-index: 2;
-  /* width: 710px; */
   height: 343px;
   left: 326px;
   top: 506px;
-
-}
-
-/* .carousel {} */
-
-
-.Carousel-sub {
-  /* height: 35px; */
-  width: 307px;
-  left: 566px;
-  top: 175px;
-  border-radius: nullpx;
-
 }
 
 .carimage {
-  /* max-width: 100%; */
   height: 700px;
-
   max-width: 100%;
   max-height: 100%;
   display: block;
@@ -96,7 +76,6 @@
     position: absolute;
     z-index: 2;
     width: auto;
-    /* height: 277px; */
     left: 55px !important;
     top: 318px !important;
   }
@@ -124,9 +103,6 @@
   }
 
   .truckAbs {
-    /* 
-    width: 593px;
-    height: 339px; */
     left: 155px;
     top: 530px;
   }

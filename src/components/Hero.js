@@ -18,9 +18,6 @@ const Hero = () => {
                   src={image}
                   alt=""
                 />
-                <Carousel.Caption className='carousel-caption'>
-                
-                </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
@@ -30,12 +27,11 @@ const Hero = () => {
                 alt="Second slide"
               />
 
-              <Carousel.Caption className='carousel-caption'>
-                <h3 className='Carousel-sub'> - Quick & Powerful Solution - </h3>
-                <p className='carousel-para'>UNBEATABLE TRUCKING AND TRANSPORTATION SERVICES</p>
+              <Carousel.Caption className='carousel-cap'>
+                <h3 className='Carousel-sub'>  Quick <span> & </span> Powerful Solution </h3>
+                <h1 className='carousel-para'>UNBEATABLE TRUCKING AND TRANSPORTATION SERVICES</h1>
               </Carousel.Caption>
             </Carousel.Item>
-
             <Carousel.Item>
                 <img
                   className="d-block w-100 carimage"

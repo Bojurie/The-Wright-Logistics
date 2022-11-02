@@ -9,42 +9,24 @@ import Mapembeded from '../components/Mapembeded';
 import { FormTitle } from '../components/formTitle';
 
 const Contact = () => {
- const [ values , setValues] = useState({
-   name: "",
-   phone: "",
-   email: "",
-   subject: "",
-   message: ""
- })
+ const [ values , setValues] = useState(
+    {
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: ""
+  }
+ )
 
  const [submitted, setSubmitted ] = useState(false);
  const [valid, setValid ] = useState(false)
 
-  const nameHandler = (e)=> {
-      setValues ({...values, name: e.target.values})
-    }
-
-  const numberHandler = (e) => {
-     setValues ({...values, phone: e.target.values})
-  }
-
-  const handleEmail = (e) => {
-     setValues ({...values, email: e.target.values})
-  }
-
-   const handleSubject = (e) => {
-     setValues ({...values, subject: e.target.values})
-  }
-
-  const handleMessage = e => {
-     setValues ({...values, message: e.target.values})
-  }
-
-  const handleSubmit = (e) =>{
+  const handleSubmit = e =>{
      e.preventDefault();
-    
-    if(values.name && values.email && values.message){
-  setValid(true)
+    if(values.name && values.email && values.message && values.phone && values.subject){
+      setValid(true)
+
     }
     setSubmitted(true)
   }
@@ -57,10 +39,10 @@ const Contact = () => {
           <FormTitle className="sign-in-form__title" text="GET IN TOUCH"/> 
                 <div className='form-header'>
                   
-                  <p>I am the best at this so contact now and i will build you the most amzing website you have ever had. No Cap </p>
+                  <p>I am the best at this so contact now and i will build you the most amzing website you have ever had. No Caps </p>
                 </div>
                <div className='contact-wrapper'>
-                <form id="contact-form"  method="post" action='/contact'>
+                <form id="contact-form"  method="POST" action='/contact' onSubmit={handleSubmit}>
 
                 {submitted && valid ?  <div className='success-message'>Success! Thank you for contacting us.</div> : null}
                   <div className='contact-forms-container'>  
@@ -71,7 +53,8 @@ const Contact = () => {
                             className='form-input1'
                             type="text"
                             value={values.name} 
-                            onChange={nameHandler}
+                            required
+                            onChange={(e) => setValues(e.target.value)}
                             placeholder=' Enter name ...'/>
                       {submitted && !values.name ? <span>Please enter name</span> : null}
                     </div>
@@ -80,7 +63,8 @@ const Contact = () => {
                             className='form-input1'
                             type="text"
                             value={values.phone} 
-                            onChange={numberHandler}
+                            required
+                            onChange={(e) => setValues(e.target.value)}
                             placeholder=' Enter Phone Number...'
                         />
                         {submitted && !values.phone ? <span>Please enter your phone contact</span> : null}
@@ -93,7 +77,7 @@ const Contact = () => {
                             className='form-input1'
                             type="text"
                             value={values.email} 
-                            onChange={handleEmail}
+                            onChange={(e) => setValues(e.target.value)}
                             placeholder=' Enter Email...'/>
                       {submitted && !values.email ? <span>Please enter name</span> : null}
                     </div>
@@ -102,7 +86,7 @@ const Contact = () => {
                             className='form-input1'
                             type="text"
                             value={values.subject} 
-                            onChange={handleSubject}
+                           onChange={(e) => setValues(e.target.value)}
                             placeholder=' Subject...'/>
                         {submitted && !values.subject ? <span>Please enter your subject</span> : null}
                     </div>
@@ -114,17 +98,14 @@ const Contact = () => {
                         <textarea 
                         className=''
                         value={values.message} 
-                        onChange={handleMessage} 
+                       onChange={(e) => setValues(e.target.value)} 
                         placeholder='Message....'/>
                       {submitted && !values.message ? <span>Please enter message</span> : null}
                     </div>
                   </div>
                   <div className='button-contact'>
-                    <button 
-                        type="submit" 
-                        className="btn btn-primary contact-btn">
-                          Submit
-                    </button>
+                    <input className='btn btn-primary contact-btn' type='submit' value='Submit'  />
+                  
                   </div>
                     
                    </div> 

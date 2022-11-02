@@ -119,11 +119,19 @@ img {
 
 @media screen and (max-width: 820px) {
   .About-img {
-    width: 50%;
+    /* width: 50%; */
+  }
+
+  .container {
+    padding: 0 !important;
+  }
+
+  .About-Content {
+    display: grid;
   }
 
   .About-right {
-    width: 50%;
+    /* width: 50%; */
   }
 
   .About-Para {

@@ -1,5 +1,5 @@
 .footer {
-  height: 450px;
+  /* height: 450px; */
   background-image: url('./Images/footerbg.png');
   color: #ffffff;
   opacity: 70%;
@@ -67,7 +67,12 @@ ul {
 
   .left-side {
     max-width: 100%;
+
   }
+
+  /* .left-side p {
+    text-align: center;
+  } */
 
   .middle-side {
     width: 50%;

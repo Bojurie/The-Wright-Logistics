@@ -16,28 +16,23 @@ class Services extends Component {
               </div>
 
               <div className='right-side1'>
+                <div className='right-side1_header'>
                   <h3>Company Vision</h3>
                   <h1>How it Works</h1>
-                  <p></p>
-
-                  <ol className='service-content_paragraph'>
-                    <li>
-                      <p> 
-                        The "historical revisionists" have begun attacks on the past in their plot to change history. The Saniwa, who have been charged with protecting history, can imbue life into objects, and 
+                </div>
+                  
+                <div className='service-content_paragraph'>
+                     <p> 
+                        The "historical revisionists" have begun attacks on the past in their plot to change history. The Saniwa, who have been charged with protecting history.
                       </p>
-                    </li>
-                    <li>
-                      <p> 
-                        The "historical revisionists" have begun attacks on the past in their plot to change history. The Saniwa, who have been charged with protecting history, can imbue life into objects, and 
+                       <p> 
+                        The "historical revisionists" have begun attacks on the past in their plot to change history. The Saniwa, who have been charged with protecting history.
                       </p>
-                    </li>
-                    <li>
                       <p>
-                       The "historical revisionists" have begun attacks on the past in their plot to change history. The Saniwa, who have been charged with protecting history, can imbue life into objects, and 
+                       The "historical revisionists" have begun attacks on the past in their plot to change history. The Saniwa, who have been charged with protecting history.
                       </p>
-                    </li>
-                  </ol>
-                <br/>
+                </div>
+                
               </div> 
           </div>
         </div>

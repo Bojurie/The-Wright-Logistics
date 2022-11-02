@@ -282,6 +282,10 @@ img {
   color: lightblue;
 }
 
+span {
+  color: red;
+}
+
 @media screen and (max-width: 414px) {
   .form-header {
     text-align: center;
